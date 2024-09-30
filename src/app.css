@@ -1,0 +1,73 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--light: #cbd5e1;
+	--dim: #94a3b8;
+	--dim2: #334155;
+	--dim3: #0f172a;
+	--dark: #020617;
+	--accent: #818cf8;
+	--link: #5eead4;
+	--link2: #ccfbf1;
+}
+
+@layer base {
+	main {
+		@apply min-h-screen bg-fixed bg-gradient-to-b from-link2 to-link;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		@apply text-light;
+	}
+	h1 {
+		@apply text-3xl;
+	}
+	h2 {
+		@apply text-2xl;
+	}
+	h3 {
+		@apply text-xl;
+	}
+	h4 {
+		@apply text-lg;
+	}
+	p {
+		@apply text-dim2;
+	}
+	footer {
+		@apply text-sm text-dim2 py-8 text-center;
+	}
+	nav {
+		@apply bg-dim3;
+	}
+	a {
+		@apply link;
+	}
+}
+
+@layer components {
+	.page-title {
+		@apply text-6xl md:text-8xl font-mono mt-8 mb-12 text-transparent bg-clip-text bg-gradient-to-t from-dim2 to-accent;
+	}
+	.box {
+		@apply backdrop-blur-md bg-white/50 rounded-2xl p-8 my-10 z-30 max-w-96 mx-auto;
+	}
+	.box-title {
+		@apply text-3xl font-mono mb-6 bg-clip-text text-dim;
+	}
+	.hover-glow {
+		@apply hover:shadow-lg hover:shadow-link hover:scale-105 transition-all duration-200;
+	}
+	.link {
+		@apply text-link hover:text-accent font-mono;
+	}
+	.btn {
+		@apply bg-dark text-link hover:bg-dim2 hover:text-accent px-6 py-2 rounded-full;
+	}
+}
