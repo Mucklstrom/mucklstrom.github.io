@@ -8,8 +8,7 @@
 
 <Box title="About">
 	<p>
-		We are a nano-sized software company dedicated to building innovative consumer-facing
-		applications.
+		We are building the next generation of consumer-facing applications.
 	</p>
 </Box>
 
